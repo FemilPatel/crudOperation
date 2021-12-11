@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    
+<table>
+    <tr>
+        <td>
+            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                <div>
+                    <label>Full Name</label>
+                    <input type="text" name="fullName" id="fullName">
+                </div>
+                <div>
+                    <label>EMP Code</label>
+                    <input type="text" name="empCode" id="empCode">
+                </div>
+                <div>
+                    <label>Salary</label>
+                    <input type="text" name="salary" id="salary">
+                </div>
+                <div>
+                    <label>City</label>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div  class="form-action-buttons">
+                    <input class="btn btn-info" type="submit" value="Submit">
+                </div>
+            </form>
+        </td>
+        <td>
+            <table class="list" id="employeeList">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>EMP Code</th>
+                        <th>Salary</th>
+                        <th>City</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+<script src="script.js"></script>
+</body>
+
+</html>/
